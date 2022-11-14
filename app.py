@@ -27,7 +27,7 @@ class Welcome(Resource):
 
 class MaxValueResource(Resource):
     def get(self):
-        return {'NORMALIZATION_MAX': Config.get_property("NORMALIZATION_MAX")}, 200
+        return {'NORMALIZATION_MAX': C.get_property("NORMALIZATION_MAX")}, 200
 
 class PlaylistResource(Resource):
     def get(self, playlist_id):

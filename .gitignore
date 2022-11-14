@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Compiled python modules.
+*.pyc
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+
+# Setuptools distribution folder.
+/dist/
+
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+.cache
+
+.idea
+
+venv
+
+.DS_Store
