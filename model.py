@@ -171,7 +171,8 @@ class Pipeline():
 
     def run_task2(self):
         try:
-            T = Tracklist(pd.read_csv(self.PLAYLIST_TRACKS_PATH, sep=";"))\
+            T = Tracklist(pd.read_csv(self.PLAYLIST_TRACKS_PATH, sep=";")) \
+                .dropna(inplace=True)\
                 .clean_key(["playlist_id"])
             # write
             create_dir(base_dir=self.OUTPUT_DIR_PATH)

@@ -8,6 +8,7 @@ To run the application in your local machine you need to have Python (3.8 or lat
 
 I recommend to run the application in a virtual env https://docs.python.org/3/library/venv.html
 ```
+pip install -r requirements.txt
 python app.py
 ```
 
@@ -15,9 +16,9 @@ python app.py
 
 The service have the following endpoints:
 
-● [GET] /max_value
+- [GET] /max_value
 
-● [GET] /playlist/<playlist_id>
+- [GET] /playlist/<playlist_id>
 
-● [GET] /tracklist/<playlist_id>
+- [GET] /tracklist/<playlist_id>
 

@@ -38,20 +38,23 @@ to reflect the 2 endpoint and one additional class (Pipeline)
 which was not strictly required, but I found useful to have to keep the code clean.
 The last class created is MyDF which is used primarly for data preparation and cleaning. This class 
 is an extension of pd.DataFrame which turns to be really handy in this use case.
+I decided to add one table (playlist_tracks_grouped.csv) in the /.output folder to not do aggregation at request time
+
+#### Alternative/Improvements
+Error handling: This is lacking and in some part completely missing. 
+Testing: This is also missing. Add more tests, create more complex test case.
+Data: I'm not satisfied about how I tested the csv outputs generated. 
+
+I didn't find useful to apply min-max normalization on standard deviation even if the instruction seems to suggest that.
+I rounded the result of playlist_tracks_stats.json to the lower int
+I dind't apply complete data preprocessing/cleaning. I didn't check for outliers or any other wrong data points.
 
 #### ● mention any obstacles or difficulties you had/have regarding this task
 I'm more conformable in building transformations in Spark than in Python. This requirements to use OOP "whenever possible"
 pushed me to reconsider some fixed points on how to address data related use cases.
 
 
-## Alternative/Improvements
-Error handling: This is lacking and in some part completelly missing. 
-Testing: Add more tests. Create more complex test case.
-Data: I'm not satisfied about how I tested the csv outputs generated. 
 
-If I had the chance I'll try to solve some doubt about the instructions.
-I didn't find useful to apply min-max normalization on standard deviation even if the instruction seems to suggest that.
-I rounded the result of playlist_tracks_stats.json to the lower int.
 
 
 ## Time needed
