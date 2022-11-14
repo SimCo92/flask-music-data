@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 __pycache__
+**/__pycache__
 
 # Compiled python modules.
 *.pyc
