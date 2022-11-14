@@ -1,0 +1,6 @@
+{
+  "NORMALIZATION_MAX": 100,
+  "INPUT_DIR_PATH": "data",
+  "OUTPUT_DIR_PATH": ".output",
+  "TMP_DIR_PATH": ".tmp"
+}
