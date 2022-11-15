@@ -20,19 +20,19 @@ a + (x - min(x))(b - a)/(max(x) - min(x))
 x / mean
 ``
 
-#### ● Describe and motivate your choice of libraries
+#### Describe and motivate your choice of libraries
 I installed only two libraries out of python core ones
 
-#####Flask-restful:
+##### Flask-restful:
 It is an extension for Flask that adds support for quickly building REST APIs.
 I choose to use this in place of simple Flask to encourage the Object Oriented Programming that was one of the requirement, and
 because the use-case to implement was not requiring more complex approaches.
 
-#####Pandas:
+##### Pandas:
 I use Pandas to have an handy tool to work with csv input files and implement simple data transformation.
 For these two reason it was preferred to numpy and sklearn or other advanced libraries.
 
-#### ● short mention of implementation design considerations / code organization
+#### Short mention of implementation design considerations / code organization
 I tried to use extensively OOP as requested in the instruction. For this reason I created 2 Classes (Tracklist, Playlist)
 to reflect the 2 endpoint and one additional class (Pipeline)
 which was not strictly required, but I found useful to have to keep the code clean.
@@ -41,15 +41,16 @@ is an extension of pd.DataFrame which turns to be really handy in this use case.
 I decided to add one table (playlist_tracks_grouped.csv) in the /.output folder to not do aggregation at request time
 
 #### Alternative/Improvements
+Documentation: Improve the dosumentation. Generate swagger for APIs endpoint and any other useful support resource.
 Error handling: This is lacking and in some part completely missing. 
 Testing: This is also missing. Add more tests, create more complex test case.
-Data: I'm not satisfied about how I tested the csv outputs generated. 
+Data: I'm not satisfied about how I tested the csv outputs generated. I dind't apply complete data preprocessing/cleaning. I didn't remove outliers or any other wrong data points. A complete domain/use-case knowledge is needed to apply correct data cleaning/preparation.
 
+Notes:
 I didn't find useful to apply min-max normalization on standard deviation even if the instruction seems to suggest that.
 I rounded the result of playlist_tracks_stats.json to the lower int
-I dind't apply complete data preprocessing/cleaning. I didn't check for outliers or any other wrong data points.
 
-#### ● mention any obstacles or difficulties you had/have regarding this task
+#### Mention any obstacles or difficulties you had/have regarding this task
 I'm more conformable in building transformations in Spark than in Python. This requirements to use OOP "whenever possible"
 pushed me to reconsider some fixed points on how to address data related use cases.
 
