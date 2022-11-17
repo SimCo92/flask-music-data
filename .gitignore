@@ -35,4 +35,6 @@ var/
 
 venv
 
+data/
+
 .DS_Store
