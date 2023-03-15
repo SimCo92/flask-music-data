@@ -1,4 +1,4 @@
-# FlaskProject
+# Flask-Music-Data Project
 
 Flask web application that provides RESTful API endpoints for accessing and manipulating data related to music playlists and tracks. This project was developed as code assigned in an interview process
 
