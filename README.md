@@ -1,6 +1,13 @@
 # FlaskProject
 
-This small Flask rest api was developed as code assigned in an interview process
+Flask web application that provides RESTful API endpoints for accessing and manipulating data related to music playlists and tracks. This project was developed as code assigned in an interview process
+
+## Instruction
+This assignment involves data collected for playlists on Spotify. Each playlist contains a range of
+numeric attributes, which describe specific parameters of the playlist. We also provide a file with
+a list of tracks per playlist. The task is to build a data pipeline with slight transformation of the
+data, linking the two sources, setting up a database for the data and a REST service that can
+serve the data. Find more details on the task below. (check the assignment_instruction.pdf)
 
 
 ## Run
